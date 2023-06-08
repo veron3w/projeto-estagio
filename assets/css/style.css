@@ -9,7 +9,24 @@
   align-items: center;
 }
 
+
+/* aqui eu consegui centralizar um container sobrepondo uma imagem
+Com muita dificuldade consegui, sendo que só depois descobri que eu já sabia fazer isso há muito tempo e desanimava por achar que não sabia, o problema era que faltava uma unica tag, a position: relative; e o position: absolute; rsrsrs 
+Ou seja, a imagem que vai receber a sobreposição, recebe o relative
+já a imagem que vai sobrepor, recebe o absolute */
+.main-background-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-london{
+  width: 100%;
+}
+
 .top-container {
+  position: absolute;
   border: 1px #ff0000 solid;
   width: 900px;
   height: 15rem;
@@ -28,12 +45,6 @@
   background-color: #d41919;
 }
 
-.airplane:hover{
-  cursor: pointer;
-  transition: ease-in-out .3s;
-  background-color: #e04747;
-}
-
 .texts {
   padding: 5px;
   display: flex;
@@ -42,6 +53,19 @@
   align-items: center;
   width: 100%;
   /* border: 1px #27262e solid; */
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+
+}
+
+.texts:hover{
+  width: 950px;
+  cursor: pointer;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-delay: 0.2s;
+  background-color: #e04747;
 }
 
 .icons {
