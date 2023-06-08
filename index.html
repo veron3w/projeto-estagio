@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Estagiário - DEV MEDIA</title>
 
+    <link rel="icon" type="image/x-icon" href="./assets/imagens/logo-icon.png">
 
+
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="nav-bar">
+        <section class="nav-bar">
+            <h1>Header</h1>
             <div class="icon">
                 <i class="fas fa-map-marker-alt" style="color: #f86c20;"></i>
             </div>
@@ -20,51 +24,54 @@
             <div class="icon">
                 <i class="fas fa-search" style="color: #5f6267;"></i>
             </div>
-        </nav>
+        </section>
     </header>
 
     <main class="main">
         <section class="main-background-img">
-            <img src="./assets/imagens/london.jpg" alt="Imagem da cidade de Londres com vários veículos e pessoas">
+            <img class="img-london" src="./assets/imagens/london.jpg" alt="Imagem da cidade de Londres com vários veículos e pessoas">
+            <section class="container top-container">
+                <div class="main-container-top">
+                    <div class="airplane texts">
+                        <i class="fa-solid fa-plane" style="color: #ffffff;"></i>
+                        <p class="p-texts">Flight</p>
+                    </div>
+                    <div class="hotel texts">
+                        <i class="fa-solid fa-hotel" style="color: #ffffff;"></i>
+                        <p class="p-texts">Hotel</p>
+                    </div>
+                    <div class="rental texts" >
+                        <i class="fa-solid fa-car" style="color: #ffffff;"></i>
+                        <p class="p-texts">Rental</p>
+                    </div>
+                </div>
+                <div class="travels">
+                    <h1 class="h1 travel">Travel the world with us</h1>
+                    <div class="inputs">
+                        <div class="input-departing-from">
+                            <p class="from">From</p>
+                            <input class="input-text" type="text" name="text" id="text-departing-from" placeholder="Departing from...">
+                        </div>
+            
+                        <div class="input-arriving-at">
+                            <p class="to">To</p>
+                            <input class="input-text" type="text" name="text" id="text-arriving-at" placeholder="Arriving at...">
+                        </div>                        
+                    </div>
+
+                    <div class="search-button">
+                        <button class="search-btn">Search and find dates</button>
+                    </div>
+                </div> 
+            </section>
+
         </section>
 
 
         <!-- primeira section  -->
-        <section class="container top-container">
-
-            <div class="main-container-top">
-                <div class="airplane">
-                    <i class="fas fa-plane"></i>
-                    <p>Flight</p>
-                </div>
-                <div class="hotel">
-                    <i class="fas fa-bed-empty"></i>
-                    <p>Hotel</p>
-                </div>
-                <div class="rental">
-                    <i class="fas fa-bed-empty"></i>
-                    <p>Rental</p>
-                </div>
-            </div>
-
-        </section>
+        
 
         <section class="container body-container">
-
-            <div class="input-departing-from">
-                <h1 class="h1 travel">Travel the world with us</h1>
-                <p class="from">From</p>
-                <input class="input-text" type="text" name="text" id="text-departing-from" placeholder="Departing from...">
-            </div>
-
-            <div class="input-arriving-at">
-                <p class="to">To</p>
-                <input class="input-text" type="text" name="text" id="text-arriving-at" placeholder="Arriving at...">
-            </div>
-
-            <div class="search-button">
-                <button class="search-btn">Search and find dates</button>
-            </div>
 
         </section>
 
