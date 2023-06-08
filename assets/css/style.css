@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200;400&family=Roboto:wght@100;400&display=swap');
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .header {
   height: 45px;
   background-color: firebrick;
@@ -25,6 +31,12 @@
   background-color: #d41919;
 }
 
+.airplane:hover{
+  cursor: pointer;
+  transition: ease-in-out .3s;
+  background-color: #e04747;
+}
+
 .texts {
   padding: 5px;
   display: flex;
@@ -41,6 +53,7 @@
 }
 
 .p-texts {
+  font-size: 15px;
   color: #ffffff;
   width: 55px;
   height: 30px;
@@ -52,19 +65,29 @@
 
 .travels,
 .travels h1 {
+  margin: 13px 0 0 13px;
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
 }
+
+#h1 {
+  font-size: 1.5rem;
+}
+
 .input-text {
-  width: 370px;
+  width: 420px;
   height: 40px;
+  border: 0.5px solid #c5c5c5;
+    font-family: "Raleway", sans-serif;
+
 }
 
 .input-text::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 5px;
 }
 
+/* from / departing from ------ to / arriving at */
 .inputs {
   display: flex;
   flex-direction: row;
@@ -73,28 +96,22 @@
   padding-top: 15px;
   gap: 15px;
 }
+
 .search-button {
   padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
 }
 
-
 .search-btn {
-  color: #FFFFFF;
-  background-color: #707070;
+  color: #ffffff;
+  background-color: #5a5959;
   width: 180px;
   height: 40px;
   padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Raleway", sans-serif;
+  border: none;
 }
 
-.search-btn::placeholder{
-  font-family: "Roboto", sans-serif;
-  padding: 5px;
-  
-}
+
