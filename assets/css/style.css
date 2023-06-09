@@ -1,14 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200;400&family=Roboto:wght@100;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200;400&family=Roboto:wght@100;400&display=swap");
 
 .header {
+  width: 100%;
   height: 45px;
-  background-color: firebrick;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.span-logo {
+  padding-left: 5px;
+  margin-left: 13px;
+  color: #e70000;
+  font-family: "Raleway", sans-serif;
+}
+
+.icon {
+  margin-left: 23px;
+}
+
+.fa-search {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
 
 /* aqui eu consegui centralizar um container sobrepondo uma imagem
 Com muita dificuldade consegui, sendo que só depois descobri que eu já sabia fazer isso há muito tempo e desanimava por achar que não sabia, o problema era que faltava uma unica tag, a position: relative; e o position: absolute; rsrsrs 
@@ -21,7 +43,7 @@ já a imagem que vai sobrepor, recebe o absolute */
   align-items: center;
 }
 
-.img-london{
+.img-london {
   width: 100%;
 }
 
@@ -56,10 +78,9 @@ já a imagem que vai sobrepor, recebe o absolute */
   transition-property: width;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
-
 }
 
-.texts:hover{
+.texts:hover {
   width: 950px;
   cursor: pointer;
   transition-property: width;
@@ -99,8 +120,7 @@ já a imagem que vai sobrepor, recebe o absolute */
   width: 420px;
   height: 40px;
   border: 0.5px solid #c5c5c5;
-    font-family: "Raleway", sans-serif;
-
+  font-family: "Raleway", sans-serif;
 }
 
 .input-text::placeholder {
@@ -135,4 +155,83 @@ já a imagem que vai sobrepor, recebe o absolute */
   border: none;
 }
 
+.mid-container {
+  width: 1200px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
 
+.container-images img {
+  padding: 10px;
+}
+
+.container-images {
+  display: flex;
+  width: 1200px;
+  border: 1px solid black;
+  position: relative;
+  padding: 10px;
+}
+
+.img-separate {
+  max-width: 750px;
+  max-height: 650px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cinqueterre {
+  max-width: 500px;
+  max-height: 420px;
+}
+
+.newyork,
+.sanfrancisco,
+.pisa,
+.eiffel {
+  display: flex;
+  justify-content: center;
+  max-width: 270px;
+  /* position: absolute; */
+}
+
+/* .img-sanfrancisco {
+  display: flex;
+  position: absolute;
+  left: 800px;
+} */
+
+.container-images p {
+  position: absolute;
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+}
+
+.cinqueTerre {
+  display: flex;
+  bottom: 40px;
+  left: 40px;
+}
+.newYork {
+  display: flex;
+  bottom: 225px;
+  right: 500px;
+}
+
+.sanFrancisco {
+  display: flex;
+  bottom: 225px;
+  right: 210px
+}
+
+.pisa {
+  display: flex;
+  bottom: 45px;
+  right: 540px;
+}
+
+.paris {
+  display: flex;
+  bottom: 45px;
+  right: 280px;
+}
